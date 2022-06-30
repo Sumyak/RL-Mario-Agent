@@ -9,7 +9,7 @@ import torch
 import torch.nn as nn
 import random
 import gym_super_mario_bros
-from nes_py import nes_py.wrappers
+from nes_py import wrappers
 #from nes_py.wrappers import JoypadSpace
 from tqdm import tqdm
 import pickle 
