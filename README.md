@@ -21,10 +21,11 @@ run RL_mario_Agent.ipynb
 This project trains for 10,000 episodes and at the end of the training, we can see a qualitative graph showing average rewards per 500 episodes.
 
 * Gameplay video
-After successfully training the exhaustive model, run the following command in google collab to see our RL agent play the super mario bros and acing it.
+
 ```javascript
 run Gameplay.ipynb
 ```
+After successfully training the exhaustive model, run the above command in google collab to see our RL agent play the super mario bros and acing it.
 
 
 
