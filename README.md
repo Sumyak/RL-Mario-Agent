@@ -1,6 +1,7 @@
 # RL Mario Agent
 
-This project aims to build a robust RL agent that can easily make it through the first level of Super Mario Bros.
+This project trains a robust RL agent that can easily make it through the first level of Super Mario Bros using DDQN.
+
 
 
 ## Clone the Repo
