@@ -166,8 +166,8 @@ class Agent:
         self.target_net = DQN(state_space, action_space).to(self.device)
             
         if self.trained:
-            self.local_net.load_state_dict(torch.load("dq1.pt", map_location=torch.device(self.device)))
-            self.target_net.load_state_dict(torch.load("dq2.pt", map_location=torch.device(self.device)))
+            self.local_net.load_state_dict(torch.load("local.pt", map_location=torch.device(self.device)))
+            self.target_net.load_state_dict(torch.load("target.pt", map_location=torch.device(self.device)))
                     
         self.optimizer = torch.optim.Adam(self.local_net.parameters(), lr=lr)
         self.copy_weights = 5000  # Copy the local model weights into the target network every 5000 steps
@@ -341,7 +341,7 @@ def play_step(training, trained):
         
         total_rewards.append(total_reward)
 
-        print("Total reward after episode {} is {}".format(episode_n + 1, total_rewards[-1]))
+        print("Reward after episode {} : {}".format(episode_n + 1, total_rewards[-1]))
         episodes += 1      
     
     if training:
@@ -352,8 +352,8 @@ def play_step(training, trained):
         with open("total_rewards.pkl", "wb") as f:
             pickle.dump(total_rewards, f)
         
-        torch.save(agent.local_net.state_dict(), "dq1.pt")
-        torch.save(agent.target_net.state_dict(), "dq2.pt")
+        torch.save(agent.local_net.state_dict(), "local.pt")
+        torch.save(agent.target_net.state_dict(), "target.pt")
         
         torch.save(agent.STATE_MEM,  "STATE_MEM.pt")
         torch.save(agent.ACTION_MEM, "ACTION_MEM.pt")
