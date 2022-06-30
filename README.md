@@ -7,11 +7,15 @@ This project trains a robust RL agent that can easily make it through the first 
 ## Clone the Repo
 
 ```javascript
-git clone https://github.com/Sumyak/RL-Mario-Agent.git demo
+!git clone https://github.com/Sumyak/RL-Mario-Agent.git demo
 cd demo
 ```
+##Start training 
 
-    
+```javascript
+run RL_mario_Agent.ipynb
+```
+
 ## Author
 
 - [@SamyakJain](https://github.com/Sumyak)
