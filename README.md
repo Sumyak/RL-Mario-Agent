@@ -23,7 +23,7 @@ This project trains for 10,000 episodes and at the end of the training, we can s
 * Gameplay video
 
 ```javascript
-run Gameplay.ipynb
+run Mario_Gameplay.ipynb
 ```
 After successfully training the exhaustive model, run the above command in google collab to see our RL agent play the super mario bros and acing it.
 
