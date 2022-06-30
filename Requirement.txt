@@ -1,3 +1,0 @@
-nes-py==0.2.6
-gym-super-mario-bros
-opencv-python
