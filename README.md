@@ -8,8 +8,11 @@ This project trains a robust RL agent that can easily make it through the first 
 
 ```javascript
 !git clone https://github.com/Sumyak/RL-Mario-Agent.git demo
+```
+```javascript
 cd demo
 ```
+
 * Start training 
 
 ```javascript
