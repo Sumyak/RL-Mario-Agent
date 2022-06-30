@@ -1,14 +1,11 @@
 # RL Mario Agent
 
 This project aims to build a robust RL agent that can easily make it through the first level of Super Mario Bros.
-## Usage/Examples
+## Clone the Repo
 
 ```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
+git clone https://github.com/Sumyak/RL-Mario-Agent.git demo
+cd demo
 ```
 
 
