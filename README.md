@@ -10,11 +10,12 @@ This project trains a robust RL agent that can easily make it through the first 
 !git clone https://github.com/Sumyak/RL-Mario-Agent.git demo
 cd demo
 ```
-##Start training 
+* Start training 
 
 ```javascript
 run RL_mario_Agent.ipynb
 ```
+This project trains for 10,000 episodes and at the end of the training, we can see a qualitative graph showing average rewards per 500 episodes.
 
 ## Author
 
